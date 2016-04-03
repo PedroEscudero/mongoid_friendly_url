@@ -1,3 +1,4 @@
+require 'active_support/concern'
 module Concerns::Sluged
   extend ActiveSupport::Concern
   
