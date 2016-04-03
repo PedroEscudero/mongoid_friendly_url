@@ -1,12 +1,8 @@
-require 'active_support/concern'
-module Concerns::Sluged
-  extend ActiveSupport::Concern
+module Sluged
+
   
-  included do
+ 
 
-  		field :slug, type: String
-
-  		before_save :make_slug
 
 	  	def to_param
 	  		slug
@@ -20,5 +16,4 @@ module Concerns::Sluged
 	  		self.where(slug:id).present? ? self.where(slug:id).first : super
   		end	
 
-  	end
 end	
