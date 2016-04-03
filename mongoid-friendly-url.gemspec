@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.description = "Gem to provide friendly url system for mongoid projects"
   s.authors     = ["Pedro Escudero Zumel"]
   s.email       = 'pedroescudero.zumel@gmail.com'
-  s.files       = ["lib/mongoid-friendly-url.rb"]
-  s.homepage    =
-    'https://github.com/PedroEscudero/mongoid-friendly-url'
+  s.files       = ["lib/mongoid_friendly_url.rb"]
+  s.homepage    = 'https://github.com/PedroEscudero/mongoid-friendly-url'
   s.license       = 'MIT'
+  s.require_paths = ["lib"]
 end
