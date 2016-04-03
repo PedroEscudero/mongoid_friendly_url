@@ -10,5 +10,4 @@ Gem::Specification.new do |s|
   s.homepage    =
     'https://github.com/PedroEscudero/mongoid-friendly-url'
   s.license       = 'MIT'
-  gem.require_path  = 'lib'
 end
