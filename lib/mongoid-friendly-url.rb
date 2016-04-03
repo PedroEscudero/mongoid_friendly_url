@@ -1,8 +1,8 @@
 module Sluged
 
 	def self.included(base)
+		base.extend ClassMethods
 		base.class_eval do
-		  scope :named, -> { where(name: "Pedro") }
 		  field :slug, type: String
 		  before_save :make_slug
 		end
@@ -16,8 +16,10 @@ module Sluged
 		self.slug = send(self.class::FIELD_FOR_SLUG).gsub(" ","-")
 	end
 
-	def self.find(id)
-		self.where(slug:id).present? ? self.where(slug:id).first : super
+	module ClassMethods
+		def find(id)
+			self.where(slug:id).present? ? self.where(slug:id).first : super
+		end	
 	end	
 
 end
