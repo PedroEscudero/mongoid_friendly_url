@@ -1,5 +1,5 @@
 
-module MongoidFriendly
+module MongoidFriendlyUrl
 
 	module Sluged
 
