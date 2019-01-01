@@ -22,8 +22,3 @@ After that you have to declare what field is going to be used for making the fri
 
 The find method is overwriten, so is not necesary to change any code in your current project (but you be aware if you are overwriten the find method in your model). 
 You can also build a basic scaffold, an the result will be as usual.
-
-
-You can see a production project running with this gem in http://cupones.link
-
-
